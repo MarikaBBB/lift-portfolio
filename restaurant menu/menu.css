@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/735869/pexels-photo-735869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+main {
+  display: inline-block;
+  min-height: 100%;
+  padding: 0 2rem;
+  background-color: #ffffffaa;
+}
+
+h1,
+h2 {
+  margin-bottom: 0;
+  line-height: 1;
+  font-family: "Sacramento", cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.fa-book-open {
+  color: deepskyblue;
+}
+
+.fa-bread-slice {
+  color: sienna;
+}
+
+.fa-utensils {
+  color: gray;
+}
+
+.fa-ice-cream {
+  color: lightcoral;
+}
