@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marika Bertelli | Pokemon</title>
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+
+<body>
+    <h1>Pokemon</h1>
+    <p>Enter the name of a pokemon here:</p>
+    <p><input type="text" id="pokemonInput"></p>
+    <p><button id="showButton">Find out more</button></p>
+    <p>(Inspiration: Pikachu, Bulbasaur, Eevee, Charmander)</p>
+    <div id="pokemonDiv" hidden>
+        <h2>About <span id="nameSpan"></span></h2>
+        <img id="spriteImage" width="96" height="96">
+        <p>Height: <span id="heightSpan"></span> &bullet; Weight: <span id="weightSpan"></span></p>
+        <p>Base experience: <span id="baseExperienceSpan"></span></p>
+        <p>Type(s): <span id="typeSpan"></span></p>
+    </div>
+    <script src="pokemon.js"></script>
+</body>
+</html>

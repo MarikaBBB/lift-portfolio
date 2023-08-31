@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 1rem;
+    transition: transform 1s linear;
+}
+
+img.rotated {
+    transform: rotate(360deg);
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
