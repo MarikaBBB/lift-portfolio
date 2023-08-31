@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marika Bertelli | Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Weather</h1>
+    <p>Postcode to check:</p>
+    <p><input type="text" id="postcodeInput"></p>
+    <p><button id="showButton">Show me the weather</button></p>
+    <div id="weatherDiv" hidden>
+        <h2>Weather for <span id="locationSpan"></span></h2>
+        <h3><span id="descriptionSpan"></span> &bullet; <span id="temperatureSpan"></span>&deg;C</h3>
+    </div>
+    <div id="errorDiv" hidden>
+        <h2>Unable to fetch weather for <span id="postcodeSpan"></span></h2>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

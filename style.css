@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
+
+body {
+  background-color: deepskyblue;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+nav a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+nav a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Mynerve", cursive;
+}
+
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+input,
+button {
+    padding: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: background-color 0.25s;
+}
+
+input:hover,
+input:focus,
+button:hover,
+button:active {
+    background-color: #ffffff80;
+}
+
+button {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black;
+}
+
+.message {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+}
+
+.message.visible {
+    opacity: 1;
+    pointer-events: all;
+}
