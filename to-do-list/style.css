@@ -5,12 +5,13 @@
   box-sizing: border-box;
 }
 
-
+/* Body styles */
 body {
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
+/* Container styles */
 .container {
   max-width: 500px;
   margin: 0 auto;
@@ -21,15 +22,17 @@ body {
   background-color: #fff;
 }
 
+/* Heading styles */
 h1 {
   font-size: 24px;
 }
 
+/* Input container styles */
 .input-container {
   margin-top: 20px;
 }
 
-
+/* Text input styles */
 input[type="text"] {
   width: 70%;
   padding: 12px;
@@ -39,6 +42,7 @@ input[type="text"] {
   font-family: "Raleway", sans-serif;
 }
 
+/* Task input styles */
 #taskInput {
   width: 70%;
   margin-bottom: 1.5rem;
@@ -46,6 +50,7 @@ input[type="text"] {
   text-align: center;
 }
 
+/* Button styles */
 button {
   padding: 8px 12px;
   font-size: 16px;
@@ -56,7 +61,7 @@ button {
   align-items: center;
 }
 
-
+/* Task list styles */
 .tasks {
   height: 25rem;
   margin: 0;
@@ -67,6 +72,7 @@ button {
   overflow-y: auto;
 }
 
+/* List item styles */
 li {
   display: flex;
   justify-content: space-between;
@@ -75,36 +81,39 @@ li {
   padding: 3px;
 }
 
-  
-  .task button {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    line-height: 1rem;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
-    font-family: "Raleway", sans-serif;
-    cursor: pointer;
-  }
-  
-  .task button:hover {
-    background-color: #eee;
-  }
-  
-  .task button.reorder {
-    margin-left: 0.5rem;
-    font-size: 0.75rem;
-  }
-  
-  .task button.remove {
-    font-size: 1.25rem;
-  }
+.tasks-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-grow: 1; /* Align tasks to flex-start and buttons to flex-end */
+}
 
-  
+/* Task input and checkbox styles */
+.task input[type="checkbox"],
+.task .task-text {
+  flex-grow: 0; 
+}
 
+/* Style the "Edit," "Remove," "Drag," "Move Up," and "Move Down" buttons */
+.task button.edit,
+.task button.remove,
+.task button.drag,
+.task button.move-up,
+.task button.move-down {
+  background-color: transparent;
+  font-size: 1.25rem;
+  color: #007BFF;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px; 
+  justify-content: flex-end;
+  flex-grow: 0;
+}
 
-
-
-
+.task button.remove:hover,
+.task button.drag:hover,
+.task button.edit:hover,
+.task button.move-up:hover,
+.task button.move-down:hover {
+  color: #0056b3;
+}
