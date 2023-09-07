@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #156ece;
+  border-radius: 0.25rem;
+  font-family: "Raleway", sans-serif;
+}
+
+#taskInput {
+  width: 70%;
+  margin-bottom: 1.5rem;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+
+.tasks {
+  height: 25rem;
+  margin: 0;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  list-style-type: none;
+  overflow-y: auto;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+  padding: 3px;
+}
+
+  
+  .task button {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+  }
+  
+  .task button:hover {
+    background-color: #eee;
+  }
+  
+  .task button.reorder {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .task button.remove {
+    font-size: 1.25rem;
+  }
+
+  
+
+
+
+
+
