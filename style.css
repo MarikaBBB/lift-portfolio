@@ -73,7 +73,7 @@ input:hover,
 input:focus,
 button:hover,
 button:active {
-    background-color: #ffffff80;
+    background-color: #ffffff80; 
 }
 
 button {
