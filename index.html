@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marika Bertelli</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav>
-        <a href="https://codepen.io/MarikaBBB" target="_blank">My CodePen</a>
-    </nav>
-    <h1>Hi, I'm Marika</h1>
-    <p>I'm from Italy but I'm currently live in London.</p>
-    <h2>Technologies I work with</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-    <h2>Projects from One Tech's introductory course</h2>
-    <ul>
-        <li><a href="duck gallery/gallery.html" target="_blank">Image gallery</a></li>
-        <li><a href="google/google.html" target="_blank">Google Homepage</a></li>
-        <li><a href="restaurant menu/menu.html" target="_blank">Restaurant menu</a></li>
-        <li><a href="calculator/calculator.html" target="_blank">Calculator</a></li>
-        <li><a href="weather/index.html" target="_blank">Current weather</a></li>
-        <li><a href="pokemon/index.html" target="_blank">Pokemon encyclopedia</a></li>
-        <li><a href="./to-do-list/index.html" target="_blank">to-do list</a></li>
-    </ul>
-
-    <h2>Say hello!</h2>
-    <form id="contactForm">
-        <input type="email" id="emailInput" placeholder="Your email" aria-label="Your email" required>
-        <button type="submit">Submit</button>
-        <p id="thankyouMessage" class="message">Thank you! I'll be in touch.</p>
-    </form>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/marika-bert/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/MarikaBBB" target="_blank">GitHub</a></li>
+                    <li><a href="https://codepen.io/MarikaBBB" target="_blank">CodePen</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <header id="home">
+                <h1>Hi, I'm Marika</h1>
+                <p>I am a software developer based in London with a unique background in museum leadership, visitor engagement, and archives.</p>
+                <br>
+                <p>I am now channeling my creativity and attention to detail into software engineering.</p> 
+                <br>
+                <p>Welcome to my portfolio, where each project represents a step forward in my continuous evolution as a developer.</p>
+            </header>
+            <section id="projects">
+                <h2>Projects from One Tech's introductory course</h2>
+                <!-- Place project list here -->
+                <ul>
+                    <li><a href="duck gallery/gallery.html" target="_blank">Image gallery</a></li>
+                    <li><a href="google/google.html" target="_blank">Google Homepage</a></li>
+                    <li><a href="restaurant menu/menu.html" target="_blank">Restaurant menu</a></li>
+                    <li><a href="calculator/calculator.html" target="_blank">Calculator</a></li>
+                </ul>
+                <ul>
+                    <li><a href="weather/index.html" target="_blank">Current weather</a></li>
+                    <li><a href="pokemon/index.html" target="_blank">Pokemon encyclopedia</a></li>
+                    <li><a href="./to-do-list/index.html" target="_blank">to-do list</a></li>
+                </ul>
+            </section>
+            <footer id="contact">
+                <h2>Say hello!</h2>
+                <form id="contactForm">
+                    <input type="email" id="emailInput" placeholder="Your email" aria-label="Your email" required>
+                    <textarea placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+                    <p id="thankyouMessage" class="message">Thank you! I'll be in touch.</p>
+                </form>
+            </footer>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
-
 </html>
