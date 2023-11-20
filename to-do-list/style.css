@@ -11,6 +11,14 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 200px; 
+}
+
 /* Container styles */
 .container {
   max-width: 500px;
