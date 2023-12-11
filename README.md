@@ -1,7 +1,8 @@
 # Lift's Portfolio
 
-Welcome to the GitHub repository for my personal portfolio, crafted during my time with the OneTech and Lift program.
-This portfolio showcases the projects I've developed, the skills I've honed, and the knowledge I've acquired during the 8 weeks of "Introduction to couding" course.
+Welcome to the GitHub repository for my personal portfolio, which began to take shape during an 8-week Intro to Coding course, a government-funded program organised by the LIFT programme, OneTech, and Softwire. 
+
+This portfolio is a reflection of my early steps into the world of software engineering. It showcases projects that highlight the skills and knowledge I've acquired during this foundational course.
 
 ### Projects
 
@@ -23,6 +24,10 @@ Here's a brief overview of the projects included:
 - API
 - VSCode
 - GitHub
+
+
+## Viewing the Portfolio
+To view my portfolio, visit [marikabbb.github.io/lift-portfolio/](http://marikabbb.github.io/lift-portfolio/).
 
 
 ## Contributing
