@@ -1,3 +1,89 @@
-body {
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Define root font size */
+:root {
+    font-size: 16px;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-image: url('Sky-PNG.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9); 
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto; 
+} /* Added missing closing brace */
+
+h1 {
+    color: #333;
+    font-weight: bold; 
+    font-size: 5rem; 
+    margin-bottom: 1.25rem; 
+}
+
+p {
+    font-size: 1.5rem; 
+    margin-bottom: 0.625rem; 
+    color: #3c3939; 
+}
+
+input[type="text"], button {
+    font-size: 1rem;
+    padding: 0.625rem;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: #f7f7f7; 
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-bottom: 0.5rem;
+}
+
+button:hover {
+    background-color: #e7e7e7; 
+}
+
+#errorDiv {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px; 
+    text-align: left; 
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(237, 236, 236, 0.1); 
+}
+#weatherDiv {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+

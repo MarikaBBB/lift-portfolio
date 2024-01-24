@@ -6,20 +6,20 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
+    <main>
         <h1>To-Do List</h1>
-        <div class="input-container">
-            <input type="text" id="taskInput" placeholder="Add a new task">
-            <button id="addTask">Add</button>
-        </div>
-        <div class="tasks-container">
-            <ul id="taskList">
-                <!-- Tasks will be added here -->
-            </ul>
-        </div>
-    </div>
+        <form id="taskForm">
+            <label for="taskInput">
+                <p class="lead">What do you have to do?</p>
+            </label>
+            <input type="text" id="taskInput" placeholder="Enter a task">
+        </form>
+        <ul class="tasks" id="taskList"></ul>
+    </main>
     <script src="script.js"></script>
 </body>
+
 </html>
 

@@ -44,11 +44,19 @@ nav a:hover {
   text-decoration: underline; 
 }
 
+/* .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 100px; 
+} */
+
 .main-content {
     width: 80%;
     box-sizing: border-box;
     margin-top: 100px;
     padding-left: 60px;
+    min-height: calc(100vh - 120px); /* Adjust 120px to account for header/footer height */
 }
 
 header {

@@ -1,0 +1,39 @@
+{
+    "cSpell.words": [
+        "Bertelli",
+        "Marika"
+    ],
+    "cSpell.language": "en-GB",
+    "cSpell.enableFiletypes": [
+        "!asciidoc",
+        "!c",
+        "!cpp",
+        "!csharp",
+        "!elixir",
+        "!go",
+        "!graphql",
+        "!handlebars",
+        "!haskell",
+        "!jade",
+        "!java",
+        "!javascriptreact",
+        "!json",
+        "!jsonc",
+        "!jupyter",
+        "!latex",
+        "!less",
+        "!pug",
+        "!python",
+        "!restructuredtext",
+        "!rust",
+        "!scala",
+        "!scminput",
+        "!scss",
+        "!swift",
+        "!typescript",
+        "!typescriptreact",
+        "!vue",
+        "!yaml",
+        "!yml"
+    ]
+}

@@ -1,127 +1,130 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
-/* Reset some default styles */
+/* Reset margins and padding */
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body styles */
 body {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-image: url('study.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  padding: 200px; 
+main {
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(167, 198, 221, 0.1);
+    padding: 20px;
+    margin: 20px;
 }
 
-/* Container styles */
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-/* Heading styles */
 h1 {
-  font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    font-size: 32px;
 }
 
-/* Input container styles */
-.input-container {
-  margin-top: 20px;
+.lead {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #666;
+    font-size: 24px;
+
 }
 
-/* Text input styles */
-input[type="text"] {
-  width: 70%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #156ece;
-  border-radius: 0.25rem;
-  font-family: "Raleway", sans-serif;
-}
-
-/* Task input styles */
-#taskInput {
-  width: 70%;
-  margin-bottom: 1.5rem;
-  padding: 0.25rem;
+h1, .lead {
   text-align: center;
 }
 
-/* Button styles */
-button {
-  padding: 8px 12px;
-  font-size: 16px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  align-items: center;
+#taskForm {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Task list styles */
+#taskInput {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
 .tasks {
-  height: 25rem;
-  margin: 0;
-  padding: 0.5rem;
-  border: 1px solid black;
-  border-radius: 0.25rem;
-  list-style-type: none;
-  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #fff; 
+  max-width: 500px; 
+  margin: auto; 
+  overflow: hidden; 
 }
 
-/* List item styles */
-li {
+.task {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 6px 0;
-  padding: 3px;
-}
-
-.tasks-container {
-  display: flex;
-  justify-content: space-between; 
   align-items: center; 
-  flex-grow: 1; /* Align tasks to flex-start and buttons to flex-end */
+  padding: 10px 15px; 
+  border-bottom: 1px solid #eee; 
+  padding: 15px 20px;
 }
 
-/* Task input and checkbox styles */
-.task input[type="checkbox"],
-.task .task-text {
-  flex-grow: 0; 
+.task:last-child {
+  border-bottom: none; 
 }
 
-/* Style the "Edit," "Remove," "Drag," "Move Up," and "Move Down" buttons */
-.task button.edit,
-.task button.remove,
-.task button.drag,
-.task button.move-up,
-.task button.move-down {
-  background-color: transparent;
-  font-size: 1.25rem;
-  color: #007BFF;
-  border: none;
-  cursor: pointer;
-  margin-left: 2px; 
-  justify-content: flex-end;
-  flex-grow: 0;
+.task:not(:last-child) {
+  border-bottom: 1px solid #eee; 
 }
 
-.task button.remove:hover,
-.task button.drag:hover,
-.task button.edit:hover,
-.task button.move-up:hover,
-.task button.move-down:hover {
-  color: #0056b3;
+.task input[type="checkbox"] {
+  margin-right: 10px; 
+  transform: scale(1.3);
+}
+
+.task input[type="text"] {
+  flex: 1; 
+  border: none; 
+  background: transparent; 
+  margin-right: 10px; 
+  font-size: 18px; 
+  padding: 8px 0;
+  color: #333; 
+}
+
+.task button {
+  background: none; 
+  border: none; 
+  color: #333; 
+  cursor: pointer; 
+  font-size: 20px;
+}
+
+.task button:hover {
+    color: #f00;
+}
+
+/* Style for completed tasks */
+.completed {
+  text-decoration: line-through;
+  color: #999; 
+  font-style: italic; 
 }
