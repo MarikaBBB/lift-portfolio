@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  display: inline-block;
+  width: 90%;
+  max-width: 30rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5rem;
+}
+
+#taskInput {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tasks {
+  height: 25rem;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  list-style-type: none;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.task:last-child {
+  margin-bottom: 0;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.task input[type="checkbox"]:checked + input[type="text"] {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #aaa;
+}
+
+.task input[type="text"] {
+  flex-basis: 100%;
+  padding: 0.25rem 0.5rem;
+  border: none;
+}
+
+.task button {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #555;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+  background-color: #ddd;
+}
+
+.task button.reorder {
+  margin-left: 0.5rem;
+}
+
+.task button.remove {
+  margin-left: 0.5rem;
+}
